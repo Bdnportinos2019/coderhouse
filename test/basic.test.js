@@ -1,9 +1,9 @@
-const request = requiere ('supertest');
-consta app = require (..'/app');
+const request = require('supertest');
+const app = require('../app');
 
 describe('Test the root path', () => {
-test ('It should response the GET mode pr', async () => {
-const response = await request (app).get('/');
-expect response(response.statusCode).to be(200);
-});
+  test('It should response the GET method pr', async () => {
+    const response = await request(app).get('/');
+    expect(response.statusCode).toBe(200);
   });
+});
